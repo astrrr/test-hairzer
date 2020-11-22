@@ -1,30 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20201121 11:44:30.673" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20201122 03:05:30.795" rpa="false">
 <suite id="s1" name="Test Hairzer" source="D:\testgit\test_hairzer\test_hairzer.robot">
-<test id="s1-t1" name="ลองส่งค่า">
-<kw name="Hello Name">
-<arguments>
-<arg>testtest</arg>
-</arguments>
+<test id="s1-t1" name="ทดสอบ">
+<kw name="${INDEX} IN [ @{HZ_LO_EDIT} ]" type="for">
+<kw name="${INDEX} = สมสมร" type="foritem">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>\nHello ${data}</arg>
+<arg>\n${INDEX}</arg>
 </arguments>
-<status status="PASS" starttime="20201121 11:44:30.933" endtime="20201121 11:44:30.943"></status>
+<status status="PASS" starttime="20201122 03:05:31.175" endtime="20201122 03:05:31.176"></status>
 </kw>
+<status status="PASS" starttime="20201122 03:05:31.175" endtime="20201122 03:05:31.176"></status>
+</kw>
+<kw name="${INDEX} = dede.beb......" type="foritem">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>harizer = ${URL}</arg>
+<arg>\n${INDEX}</arg>
 </arguments>
-<status status="PASS" starttime="20201121 11:44:30.943" endtime="20201121 11:44:30.943"></status>
+<status status="PASS" starttime="20201122 03:05:31.176" endtime="20201122 03:05:31.177"></status>
 </kw>
-<status status="PASS" starttime="20201121 11:44:30.933" endtime="20201121 11:44:30.944"></status>
+<status status="PASS" starttime="20201122 03:05:31.176" endtime="20201122 03:05:31.177"></status>
 </kw>
-<status status="PASS" starttime="20201121 11:44:30.931" endtime="20201121 11:44:30.944" critical="yes"></status>
+<kw name="${INDEX} = ใจดี" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${INDEX}</arg>
+</arguments>
+<status status="PASS" starttime="20201122 03:05:31.177" endtime="20201122 03:05:31.178"></status>
+</kw>
+<status status="PASS" starttime="20201122 03:05:31.177" endtime="20201122 03:05:31.178"></status>
+</kw>
+<kw name="${INDEX} = มิสเตอร์ smorf" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${INDEX}</arg>
+</arguments>
+<status status="PASS" starttime="20201122 03:05:31.179" endtime="20201122 03:05:31.179"></status>
+</kw>
+<status status="PASS" starttime="20201122 03:05:31.178" endtime="20201122 03:05:31.179"></status>
+</kw>
+<kw name="${INDEX} = Somsamorn" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${INDEX}</arg>
+</arguments>
+<status status="PASS" starttime="20201122 03:05:31.179" endtime="20201122 03:05:31.180"></status>
+</kw>
+<status status="PASS" starttime="20201122 03:05:31.179" endtime="20201122 03:05:31.180"></status>
+</kw>
+<kw name="${INDEX} = Mr.Oriver" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${INDEX}</arg>
+</arguments>
+<status status="PASS" starttime="20201122 03:05:31.180" endtime="20201122 03:05:31.180"></status>
+</kw>
+<status status="PASS" starttime="20201122 03:05:31.180" endtime="20201122 03:05:31.180"></status>
+</kw>
+<kw name="${INDEX} = ไมตรี/๑" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${INDEX}</arg>
+</arguments>
+<status status="PASS" starttime="20201122 03:05:31.181" endtime="20201122 03:05:31.181"></status>
+</kw>
+<status status="PASS" starttime="20201122 03:05:31.180" endtime="20201122 03:05:31.181"></status>
+</kw>
+<kw name="${INDEX} = สมปองไม่อยากกินก๋วยเตี๋ยวที่หน้าสภา" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${INDEX}</arg>
+</arguments>
+<status status="PASS" starttime="20201122 03:05:31.181" endtime="20201122 03:05:31.182"></status>
+</kw>
+<status status="PASS" starttime="20201122 03:05:31.181" endtime="20201122 03:05:31.182"></status>
+</kw>
+<kw name="${INDEX} = ปรายุทธ์มุดใต้ท่อห่อหมกฮ้วกza2324&amp;" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${INDEX}</arg>
+</arguments>
+<status status="PASS" starttime="20201122 03:05:31.182" endtime="20201122 03:05:31.183"></status>
+</kw>
+<status status="PASS" starttime="20201122 03:05:31.182" endtime="20201122 03:05:31.183"></status>
+</kw>
+<kw name="${INDEX} = สไมอิแมปอปแวปมแทิิาเทาดทใแ" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${INDEX}</arg>
+</arguments>
+<status status="PASS" starttime="20201122 03:05:31.183" endtime="20201122 03:05:31.184"></status>
+</kw>
+<status status="PASS" starttime="20201122 03:05:31.183" endtime="20201122 03:05:31.184"></status>
+</kw>
+<kw name="${INDEX} = สมใจmaidee+-11513519" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${INDEX}</arg>
+</arguments>
+<status status="PASS" starttime="20201122 03:05:31.184" endtime="20201122 03:05:31.185"></status>
+</kw>
+<status status="PASS" starttime="20201122 03:05:31.184" endtime="20201122 03:05:31.185"></status>
+</kw>
+<kw name="${INDEX} = สม@#%" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${INDEX}</arg>
+</arguments>
+<status status="PASS" starttime="20201122 03:05:31.186" endtime="20201122 03:05:31.186"></status>
+</kw>
+<status status="PASS" starttime="20201122 03:05:31.185" endtime="20201122 03:05:31.186"></status>
+</kw>
+<kw name="${INDEX} = adjvbl65198$%^" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${INDEX}</arg>
+</arguments>
+<status status="PASS" starttime="20201122 03:05:31.187" endtime="20201122 03:05:31.187"></status>
+</kw>
+<status status="PASS" starttime="20201122 03:05:31.186" endtime="20201122 03:05:31.187"></status>
+</kw>
+<status status="PASS" starttime="20201122 03:05:31.174" endtime="20201122 03:05:31.187"></status>
+</kw>
+<status status="PASS" starttime="20201122 03:05:31.172" endtime="20201122 03:05:31.188" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20201121 11:44:30.675" endtime="20201121 11:44:30.945"></status>
+<status status="PASS" starttime="20201122 03:05:30.797" endtime="20201122 03:05:31.190"></status>
 </suite>
 <statistics>
 <total>
