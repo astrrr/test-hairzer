@@ -5,7 +5,7 @@
 เปิดเว็บ hairzer
     Open Browser     ${URL}     ${browser}
     Maximize Browser Window
-    Set Selenium Speed  0.3
+    Set Selenium Speed  0.4
 input username
     
     Input Text    name=email    ${username_location}
@@ -23,13 +23,19 @@ input password
     Page Should Contain Element     //*[@id="navbarSupportedContent"]/ul[2]/li/div/a[2]
     Click Element       //*[@id="navbarSupportedContent"]/ul[2]/li/div/a[2] 
 Hello Name
-    [Arguments] ${data}
+    [Arguments]     ${data}
     Log To Console  \nHello ${data}
     Log To Console  harizer  ${URL}
 
 input Name
-    FOR ${INDEX}    IN  ${HZ_LO_EDIT_02}
-        Input Text  id=firstName    @{INDEX}
-        Click Button    name=submit_profile_location
-    END
+    [Arguments]     ${INDEX}        @{ITEMS}
+    
+    Sleep   1s
+    Input Text  id=firstName        @{ITEMS}[${INDEX}]
+    Click Button    name=submit_profile_location
+    Sleep   1s
+    Alert Should Be Present     text=แก้ไขข้อมูลส่วนตัวสำเร็จ
+    Run Keyword And Ignore Error    Click Button    //button    
+    Sleep   1s
+    
 
