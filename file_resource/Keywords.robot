@@ -39,4 +39,38 @@ input Name
     Run Keyword And Ignore Error    Click Button    //button    
     Sleep   1s
     
+input Last Name
+    [Arguments]     ${INDEX}        @{ITEMS}
+    Sleep   3s
+    Page Should Contain Element     //*[@id="lastName"]
+    Input Text  //*[@id="lastName"]        ${ITEMS}[${INDEX}]
+    Click Button    //*[@id="app"]/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div[6]/button
+    Sleep   1s
+    Alert Should Be Present     text=แก้ไขข้อมูลส่วนตัวสำเร็จ
+    Run Keyword And Ignore Error    Click Button    //button    
+    Sleep   1s
 
+input Phone Number
+    [Arguments]     ${INDEX}        @{ITEMS}
+    Sleep   3s
+    Page Should Contain Element     //*[@id="Phone"]
+    Input Text  //*[@id="Phone"]        ${ITEMS}[${INDEX}]
+    Click Button    //*[@id="app"]/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div[6]/button
+    Sleep   1s
+    Alert Should Be Present     text=แก้ไขข้อมูลส่วนตัวสำเร็จ
+    Run Keyword And Ignore Error    Click Button    //button    
+    Sleep   1s
+
+input Address
+    [Arguments]     ${INDEX}        @{ITEMS}
+    Sleep   3s
+    Page Should Contain Element     //*[@id="addr_no"]
+    Input Text  //*[@id="addr_no"]        ${ITEMS}[${INDEX}]
+    Input Text  //*[@id="addr_soi"]     ${ITEMS}[${INDEX}]
+    Input Text  //*[@id="addr_road"]     ${ITEMS}[${INDEX}]
+    Input Text  //*[@id="addr_subDistrict"]     ${ITEMS}[${INDEX}]         
+    Click Button    //*[@id="app"]/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div[6]/button
+    Sleep   1s
+    Alert Should Be Present     text=แก้ไขข้อมูลส่วนตัวสำเร็จ
+    Run Keyword And Ignore Error    Click Button    //button    
+    Sleep   1s
