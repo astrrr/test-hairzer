@@ -74,3 +74,25 @@ input Address
     Alert Should Be Present     text=แก้ไขข้อมูลส่วนตัวสำเร็จ
     Run Keyword And Ignore Error    Click Button    //button    
     Sleep   1s
+
+input Location Name
+    [Arguments]     ${INDEX}        @{ITEMS}
+    Sleep   3s
+    Page Should Contain Element     //*[@id="locationName"]
+    Input Text  //*[@id="locationName"]        ${ITEMS}[${INDEX}]
+    Click Button    //*[@id="app"]/div[2]/div/div/div[2]/div/div/div[2]/div[1]/div[5]/button
+    Sleep   1s
+    Alert Should Be Present     text=แก้ไขข้อมูลการให้บริการของสถานที่สำเร็จ
+    Run Keyword And Ignore Error    Click Button    //button    
+    Sleep   1s
+
+input Cost
+    [Arguments]     ${INDEX}        @{ITEMS}
+    Sleep   3s
+    Page Should Contain Element     //*[@id="cost"]
+    Input Text  //*[@id="cost"]        ${ITEMS}[${INDEX}]
+    Click Button    //*[@id="app"]/div[2]/div/div/div[2]/div/div/div[2]/div[1]/div[5]/button
+    Sleep   1s
+    Alert Should Be Present     text=แก้ไขข้อมูลการให้บริการของสถานที่สำเร็จ
+    Run Keyword And Ignore Error    Click Button    //button    
+    Sleep   1s

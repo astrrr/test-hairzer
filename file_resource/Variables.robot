@@ -18,4 +18,10 @@ ${password_location}     123456789
 @{HZ_LO_EDIT_06_valid}      -       --      ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ    อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
 @{HZ_LO_EDIT_06_invalid}        vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv      อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ       อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ       อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ       อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ       อออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ    
 
+@{HZ_LO_EDIT_07_valid}      ร้านสมใจอยาก     Somchaiyak Barber       ร้านsomjaiyak        Somchaiyakร้าน       Somchaiyakmakmakmakmakmakmakmakmakma Barber     1234567891011121314151617181920
+@{HZ_LO_EDIT_07_invalid}        ช่างโสม@จาย$อยาก฿        Som@478#$       474849ฟหกbbabsfaฟหกฟไกอผปอฟหแฟหกฟอำอฟำฟหกๆไaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddd        44444444445555555555566666666677777777777778888888999999++++10516518        ccccccccccccddddddddddddawwwwwcccccccccccccccccccccccccccwwwwwweeeeeeeeeeeegggggggggggggggggggbbbbbbbbbbbbbbbbbbbbbbbbbbbbb     mulanbeไปตรี^
+
+@{HZ_LO_EDIT_08_valid}      100     101     500     160     1957        8000        14999       15000
+@{HZ_LO_EDIT_08_invalid}        99      15001       1XX     10+25       -512        10.25       0.9     8*9     1487854152354894125487 -        1@$ -       1sxcbk -        8/9     8-9     20-9=5      (1112)
+
 *** Keywords ***
