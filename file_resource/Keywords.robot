@@ -96,3 +96,14 @@ input Cost
     Alert Should Be Present     text=แก้ไขข้อมูลการให้บริการของสถานที่สำเร็จ
     Run Keyword And Ignore Error    Click Button    //button    
     Sleep   1s
+
+input Description
+    [Arguments]     ${INDEX}        @{ITEMS}
+    Sleep   3s
+    Page Should Contain Element     //*[@id="descriptionText"]
+    Input Text      //*[@id="descriptionText"]        ${ITEMS}[${INDEX}]
+    Click Button        //*[@id="app"]/div[2]/div/div/div[2]/div/div/div[2]/div[1]/div[5]/button       
+    Sleep   1s
+    Alert Should Be Present     text=แก้ไขข้อมูลการให้บริการของสถานที่สำเร็จ
+    Run Keyword And Ignore Error    Click Button    //button    
+    Sleep   1s
