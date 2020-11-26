@@ -19,19 +19,7 @@ Resource    file_resource/Keywords.robot
     กดปุ่ม sign in
     คลิกเมนู
     FOR     ${INDEX}    IN RANGE    6    
-    input Location Name     ${INDEX}        @{HZ_LO_EDIT_07_valid}
-    Reload Page
-    END
-    Close Browser
-
-ทดสอบแก้ไขชื่อสถานที่ในกรณีที่กรอกข้อมูล-ไม่ถูกต้อง
-    เปิดเว็บ hairzer
-    input username
-    input password
-    กดปุ่ม sign in
-    คลิกเมนู
-    FOR     ${INDEX}    IN RANGE    6    
-    input Location Name     ${INDEX}        @{HZ_LO_EDIT_07_invalid}
+    input Location Name     ${INDEX}        @{HZ_LO_EDIT_017}
     Reload Page
     END
     Close Browser

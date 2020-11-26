@@ -19,19 +19,7 @@ Resource    file_resource/Keywords.robot
     กดปุ่ม sign in
     คลิกเมนู
     FOR     ${INDEX}    IN RANGE    15    
-    input Description     ${INDEX}        @{HZ_LO_EDIT_010_valid}
-    Reload Page
-    END
-    Close Browser
-
-ทดสอบแก้ไขคำอธิบายในกรณีที่กรอกข้อมูล-ไม่ถูกต้อง
-    เปิดเว็บ hairzer
-    input username
-    input password
-    กดปุ่ม sign in
-    คลิกเมนู
-    FOR     ${INDEX}    IN RANGE    3    
-    input Description     ${INDEX}        @{HZ_LO_EDIT_010_invalid}
+    input Description     ${INDEX}        @{HZ_LO_EDIT_027} 
     Reload Page
     END
     Close Browser

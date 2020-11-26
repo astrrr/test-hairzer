@@ -12,14 +12,14 @@ Resource    file_resource/Keywords.robot
 
 
 *** Test Cases ***
-ทดสอบแก้ไขชื่อในกรณีที่กรอกข้อมูล-ถูกต้อง
-    FOR     ${INDEX}    IN RANGE    6    
+ทดสอบแก้ไขชื่อสถานที่ในกรณีที่กรอกข้อมูล-ไม่ถูกต้อง
     เปิดเว็บ hairzer
     input username
     input password
     กดปุ่ม sign in
     คลิกเมนู
-    input Name      ${INDEX}        @{HZ_LO_EDIT_005}
-    Close Browser
+    FOR     ${INDEX}    IN RANGE    6    
+    input Location Name     ${INDEX}        @{HZ_LO_EDIT_018}
+    Reload Page
     END
-
+    Close Browser
